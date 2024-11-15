@@ -17,8 +17,10 @@ $${\color{Green}[0.00280846,0.00237967,0.999975,-0.0059719]}$$ – orientation d
 	
 ### Process of adjusting robot references
 
+IDE: RobotStudio ABB\
+<br/>
 1. For translation misalignment:
-  - simply put the robot TCP in the current *‘wobj_table_u’ /‘wobj_table_d’* and measure with a calliper for each axis (X, Y, Z) from robot TCP to the margins of the work table. Make the calculations and update the vector position for each *wobjdata*.
+  - simply put the robot TCP in the current *‘wobj_table_up’ /‘wobj_table_down’* and measure with a calliper for each axis (X, Y, Z) from robot TCP to the margins of the work table. Make the calculations and update the vector position for each *wobjdata*.
 
 <img src="https://github.com/user-attachments/assets/2900311c-f2f4-4e61-89fe-3faa61f51177" width="400" height="250">
 <br/>
@@ -42,7 +44,7 @@ $${\color{Green}[0.00280846,0.00237967,0.999975,-0.0059719]}$$ – orientation d
 $$\tan{\theta} = \frac{dx}{L}$$
 
   - Check the actual angles at point P by using *EulerZYX()* which gets us values in [deg]
-  - If is too high we use *OrientZYX()* to change the wobjdata in the program.
+  - If is too high we use *OrientZYX()* to update the *wobjdata* in the program.
   - We do this steps for each axis rotation a few times, until we read a minimum value that doesnt affect anymore the pouring position
 
 

@@ -18,14 +18,14 @@ $${\color{Green}[0.00280846,0.00237967,0.999975,-0.0059719]}$$ – orientation d
 ### Process of adjusting robot references
 
 1. For translation misalignment:
-   - simply put the robot TCP in the current *‘wobj_table_u’ /‘wobj_table_d’* and measure with a calliper for each axis (X, Y, Z) from robot TCP to the margins of the work table. Make the calculations and update the vector position for each *wobjdata*.
+  - simply put the robot TCP in the current *‘wobj_table_u’ /‘wobj_table_d’* and measure with a calliper for each axis (X, Y, Z) from robot TCP to the margins of the work table. Make the calculations and update the vector position for each *wobjdata*.
 
 <img src="https://github.com/user-attachments/assets/2900311c-f2f4-4e61-89fe-3faa61f51177" width="400" height="250">
-
-
+<br/>
+<br/>
 
 2. For correcting the rotation angles:
-   - a magnetic dial comparator is mounted on the side of the robot gripper and gauge head touching the table in the X,Y, Z direction while the robot is moving  L distance to get the error
+  - a magnetic dial comparator is mounted on the side of the robot gripper and gauge head touching the table in the X,Y, Z direction while the robot is moving  L distance to get the error
 
 	L - distance traveled by the robot\
 	d – Dial comparator measuring value after L distance\
@@ -36,12 +36,13 @@ $${\color{Green}[0.00280846,0.00237967,0.999975,-0.0059719]}$$ – orientation d
 <img src="https://github.com/user-attachments/assets/17e76a00-5159-47a5-aaf4-5cd52821159e" width="300" height="200">
 
 
-  - Because the rotation is defined as quaternions we need to call changeWobj() to make the transformation for us after we calculate the angle error in [deg] and [rad] ( Tabel_1):
-				tan⁡〖θ=dx/L〗
 
+   - Because the rotation is defined as quaternions we need to call *changeWobj()* to make the transformation for us after we calculate the angle error in [deg] and [rad] ( Tabel_1):
 
-  - Check the actual angles at point P by using EulerZYX() which gets us values in [deg]
-	If is too high we use OrientZYX() to change the wobjdata in the program.
-	We do this steps for each axis rotation a few times, until we read a minimum value that doesnt affect anymore the pouring position
+$$\tan{\theta} = \frac{dx}{L}$$
+
+  - Check the actual angles at point P by using *EulerZYX()* which gets us values in [deg]
+  - If is too high we use *OrientZYX()* to change the wobjdata in the program.
+  - We do this steps for each axis rotation a few times, until we read a minimum value that doesnt affect anymore the pouring position
 
 

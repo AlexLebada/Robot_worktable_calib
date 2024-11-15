@@ -39,7 +39,7 @@ IDE: RobotStudio ABB\
 
 
 
-   - Because the rotation is defined as quaternions we need to call *changeWobj()* to make the transformation for us after we calculate the angle error in [deg] and [rad] ( Tabel_1):
+   - Because the rotation is defined as quaternions we to call a custom procedure *changeWobj()* to make the transformation for us after we calculate the angle error in [deg] and [rad] ( Tabel_1):
 
 $$\tan{\theta} = \frac{dx}{L}$$
 

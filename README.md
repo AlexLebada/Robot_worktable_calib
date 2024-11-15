@@ -10,7 +10,7 @@ These coordinate systems *‘wobj_table_u’* and *‘wobj_table_d’* are defin
 ###### wobjdata ‘name’:=[FALSE,TRUE,";",[ $${\color{Orange}[1128.8,1854.5,946.4]}$$, $${\color{Green}[0.00280846,0.00237967,0.999975,-0.0059719]}$$ ],[[0.00417233,0.000238419,0.000119209],[1,-4.60841E-06,3.67227E-05,1.22864E-05]]], 
 Where<br/>
 
-$${\color{Orange}[1128.8,1854.5,946.4]}$$ – represents the origin vector position related to the base reference of the robot,
+$${\color{Orange}[1128.8,1854.5,946.4]}$$ – represents the origin vector position relative to the base reference of the robot,
 
 $${\color{Green}[0.00280846,0.00237967,0.999975,-0.0059719]}$$ – orientation data in quaternions related to the base reference of the robot <br/>
 <br/>

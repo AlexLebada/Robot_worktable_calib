@@ -27,11 +27,11 @@ IDE: RobotStudio ABB\
 <br/>
 
 2. For correcting the rotation angles:
-  - a magnetic dial comparator is mounted on the side of the robot gripper and gauge head touching the table in the X,Y, Z direction while the robot is moving  L distance to get the error
+  - a magnetic dial comparator is mounted on the side of the robot gripper and gauge head touching the table while the robot is moving L distance, in the X,Y, Z direction  to find the error
 
 	L - distance traveled by the robot\
 	d – Dial comparator measuring value after L distance\
-	r – the actual table X axis
+	r – the actual table X axis orientation
 
 
 

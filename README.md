@@ -1,5 +1,6 @@
 In this case the ABB robot goal is to put silicon gasket onto a metal sheet, which is prepared alternatively on an advanced table after another one was retracted for preparations . After decommissioning, transportation and reinstallation of the robotic cell, for proper movements, the robot coordinate systems needs to be aligned with the two work tables . 
 
+![image](https://github.com/user-attachments/assets/f73cac7f-805b-42da-9e04-161ad9bac47f)
 
 
 

@@ -5,7 +5,7 @@ In this case the ABB robot goal is to put silicon gasket onto a metal sheet, whi
 (*image only for reference*)
 
 
-These coordinate systems *‘wobj_table_u’* and *‘wobj_table_d’* are defined by some data structure, for example:
+These coordinate systems *‘wobj_table_up’* and *‘wobj_table_down’* are defined by some data structure, for example:
 
 ###### wobjdata ‘name’:=[FALSE,TRUE,";",[ $${\color{Orange}[1128.8,1854.5,946.4]}$$, $${\color{Green}[0.00280846,0.00237967,0.999975,-0.0059719]}$$ ],[[0.00417233,0.000238419,0.000119209],[1,-4.60841E-06,3.67227E-05,1.22864E-05]]], 
 Where<br/>
